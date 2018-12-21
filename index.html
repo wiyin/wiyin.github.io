@@ -62,6 +62,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-first-test" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/21/first-test/" class="article-date">
+  <time datetime="2018-12-21T07:53:26.000Z" itemprop="datePublished">2018-12-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/21/first-test/">first test</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Oracle-Linux-Boot-Process"><a href="#Oracle-Linux-Boot-Process" class="headerlink" title="Oracle Linux Boot Process"></a>Oracle Linux Boot Process</h1><h2 id="Oracle-Linux-7"><a href="#Oracle-Linux-7" class="headerlink" title="Oracle Linux 7"></a>Oracle Linux 7</h2><ol>
+<li>BIOS performs POST</li>
+<li>BOST read MBR for bootloaded</li>
+<li>GRUB 2 bootloader load <strong>vmlinuz</strong> kernel image</li>
+<li>GRUB 2 extracts the contents of the <strong>initramfs</strong> image</li>
+<li>The kernel loads the driver modules from <strong>initramfs</strong></li>
+<li>Then kernel stat the system’s first process <strong>systemd</strong></li>
+<li>The systemd process takes over, it<ul>
+<li>Read configuration files from the <strong>/etc/systemd</strong> folder</li>
+<li>Reads the file linked by <strong>/etc/systemd/system/default.target</strong></li>
+<li>Brings the system to the state defined by the system targetk</li>
+<li>Executes <strong>/etc/rc.local</strong></li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/21/first-test/" data-id="cjpxqp1fb0001qgz6do8cgvy6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/12/21/hello-world/" class="article-date">
@@ -97,7 +148,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/21/hello-world/" data-id="cjpxqj54y0000nkz6mct1fggt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/12/21/hello-world/" data-id="cjpxqp1f70000qgz6873916wn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -136,6 +187,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/12/21/first-test/">first test</a>
+          </li>
         
           <li>
             <a href="/2018/12/21/hello-world/">Hello World</a>
